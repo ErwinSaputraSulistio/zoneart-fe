@@ -1,0 +1,19 @@
+@import "../mixins.scss";
+
+.noteCard {
+  @include container(none, 15em, 15em);
+  border: 1px solid black;
+  border-radius: 1em;
+}
+.noteCardJudul, .noteCardSetting, .noteCardIsi {
+  padding: 0.5em;
+}
+.noteCardJudul {
+  font-weight: bold;
+  text-align: center;
+}
+.noteCardSetting {
+  @include flex(row, center, space-evenly);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}

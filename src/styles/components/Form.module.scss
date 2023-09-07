@@ -1,0 +1,12 @@
+@import "../mixins.scss";
+
+.formContainer {
+  @include flex(column, center, center);
+  margin: auto;
+  width: 50%;
+}
+.formInput, .formButton {
+  margin: 0.5em 0;
+  padding: 1em;
+  width: 100%;
+}

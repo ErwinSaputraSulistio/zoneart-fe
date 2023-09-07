@@ -1,0 +1,17 @@
+@import "../mixins.scss";
+
+.noteList {
+  @include container(none, 100%, 100%);
+  @include flex(column, center, none);
+}
+.noteListTitle {
+  @include flex(column, center, center);
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+.noteListCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
